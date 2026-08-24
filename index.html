@@ -7,7 +7,84 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Home page content: next phase -->
+    <header>
+      <p><a href="index.html">Pradeep Tamang</a></p>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="intro-heading">
+        <p>Full-stack engineer</p>
+        <h1 id="intro-heading">Pradeep Tamang</h1>
+        <p>
+          I build websites and tools with HTML, CSS, and JavaScript while
+          learning full-stack development on Codecademy.
+        </p>
+        <p><a href="#projects">See selected work</a></p>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected work</h2>
+
+        <article>
+          <img
+            src="images/project-mixed-messages.jpg"
+            alt="Laptop with code on the screen"
+            width="1200"
+            height="800"
+          />
+          <h3>Mixed Messages</h3>
+          <p>
+            A Node.js console app that prints a new random message every time it
+            runs. Built as the first portfolio project in the Full-Stack
+            Engineer Career Path.
+          </p>
+          <p>Technologies: JavaScript, Node.js, Git</p>
+        </article>
+
+        <article>
+          <img
+            src="images/project-colmar.jpg"
+            alt="Restaurant table with plates and drinks"
+            width="1200"
+            height="800"
+          />
+          <h3>Colmar Academy</h3>
+          <p>
+            A static landing page for a fictional school. The layout follows a
+            provided design: hero, campus life, and course highlights.
+          </p>
+          <p>Technologies: HTML, CSS</p>
+        </article>
+
+        <article>
+          <img
+            src="images/project-excursion.jpg"
+            alt="Laptop showing charts and analytics"
+            width="1200"
+            height="800"
+          />
+          <h3>Excursion</h3>
+          <p>
+            A one-page product site for a travel camera app. Visitors can scan
+            the story from headline to download without leaving the page.
+          </p>
+          <p>Technologies: HTML, CSS</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Pradeep Tamang</p>
+      <p><a href="contact.html">Get in touch</a></p>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
