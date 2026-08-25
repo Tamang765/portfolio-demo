@@ -37,9 +37,46 @@
       </section>
 
       <section id="projects" class="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Selected work</h2>
+        <div class="projects-header">
+          <h2 id="projects-heading">Selected work</h2>
+          <div
+            class="project-filters"
+            data-project-filters
+            role="group"
+            aria-label="Filter projects by technology"
+            hidden
+          >
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="javascript"
+              aria-pressed="false"
+            >
+              JavaScript
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="html-css"
+              aria-pressed="false"
+            >
+              HTML/CSS
+            </button>
+          </div>
+          <p class="sr-only" data-filter-status aria-live="polite">
+            Showing all 3 projects.
+          </p>
+        </div>
 
-        <article class="project">
+        <article class="project" data-category="javascript">
           <img
             src="images/project-mixed-messages.jpg"
             alt="Laptop with code on the screen"
@@ -57,7 +94,7 @@
           </div>
         </article>
 
-        <article class="project">
+        <article class="project" data-category="html-css">
           <img
             src="images/project-colmar.jpg"
             alt="Restaurant table with plates and drinks"
@@ -74,7 +111,7 @@
           </div>
         </article>
 
-        <article class="project">
+        <article class="project" data-category="html-css">
           <img
             src="images/project-excursion.jpg"
             alt="Laptop showing charts and analytics"
